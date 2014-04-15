@@ -58,14 +58,14 @@ class AnalogWriter
 	 * @var array
 	 */
 	protected $log_level = array(
-		\Slim\Log::EMERGENCY => \Analog::URGENT,
-		\Slim\Log::ALERT => \Analog::ALERT,
-		\Slim\Log::CRITICAL => \Analog::CRITICAL,
-		\Slim\Log::ERROR => \Analog::ERROR,
-		\Slim\Log::WARN => \Analog::WARNING,
-		\Slim\Log::NOTICE => \Analog::NOTICE,
-		\Slim\Log::INFO => \Analog::INFO,
-		\Slim\Log::DEBUG => \Analog::DEBUG,
+		\Slim\Log::EMERGENCY => \Psr\Log\LogLevel::EMERGENCY,
+		\Slim\Log::ALERT => \Psr\Log\LogLevel::ALERT,
+		\Slim\Log::CRITICAL => \Psr\Log\LogLevel::CRITICAL,
+		\Slim\Log::ERROR => \Psr\Log\LogLevel::ERROR,
+		\Slim\Log::WARN => \Psr\Log\LogLevel::WARNING,
+		\Slim\Log::NOTICE => \Psr\Log\LogLevel::NOTICE,
+		\Slim\Log::INFO => \Psr\Log\LogLevel::INFO,
+		\Slim\Log::DEBUG => \Psr\Log\LogLevel::DEBUG,
 	);
 
 	/**
