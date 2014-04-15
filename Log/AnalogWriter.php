@@ -78,8 +78,8 @@ class AnalogWriter
 	 */
 	public function __construct($handler)
 	{
-		$logger = new \Analog\Logger();
-		$logger->handler($handler);
+		$this->logger = new \Analog\Logger();
+		$this->logger->handler($handler);
 	}
 
 	/**
