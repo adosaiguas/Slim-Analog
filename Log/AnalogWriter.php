@@ -8,7 +8,7 @@
  * USAGE
  *
  * $app = new \Slim\Slim(array(
- *	 'log.writer' => new \Adosaiguas\SlimAnalog\Log\MonologWriter(
+ *	 'log.writer' => new \Adosaiguas\SlimAnalog\Log\AnalogWriter(
  *		\Analog\Handler\Threshold::init (
  *			\Analog\Handler\File::init ($log_path),
  *			\Analog::DEBUG
@@ -54,11 +54,11 @@ class AnalogWriter
 	protected $logger;
 
 	/**
-	 * Converts Slim log level to Monolog log level
+	 * Converts Slim log level to Analog log level
 	 * @var array
 	 */
 	protected $log_level = array(
-		\Slim\Log::EMERGENCY => \Analog::EMERGENCY,
+		\Slim\Log::EMERGENCY => \Analog::URGENT,
 		\Slim\Log::ALERT => \Analog::ALERT,
 		\Slim\Log::CRITICAL => \Analog::CRITICAL,
 		\Slim\Log::ERROR => \Analog::ERROR,
