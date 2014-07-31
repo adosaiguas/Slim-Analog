@@ -13,7 +13,7 @@
         }
     ],
     "require": {
-        "analog/analog": "dev-master",
+        "analog/analog": "1.0.*",
         "psr/log": "1.*",
         "slim/slim": ">=2.3.0",
         "php": ">=5.3.0"
